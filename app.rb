@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
+require './lib/bookmark'
 
 class BookmarkManager < Sinatra::Base
   configure :development do
@@ -11,14 +12,9 @@ class BookmarkManager < Sinatra::Base
   end
 
   get '/bookmarks' do
-     @bookmarks = [ "https://devhints.io/rspec", "https://devhints.io/capybara"  ]
-     erb :'index'
+    @bookmarks = Bookmark.all
+    erb :index
   end
-
-  # get '/bookmarks' do
-  #   @bookmarks = Bookmark.all
-  #   erb :index'
-  # end
 
   run! if app_file == $0
 end
