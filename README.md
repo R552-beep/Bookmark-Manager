@@ -10,6 +10,9 @@ I want to see a list of bookmarks
 [click here](https://excalidraw.com/#json=-TV9lO1UOlT2AKSrsiS1j,i_WiZKJIJeezEZMtTgTcwA) to view domain model 
 
 
+* CREATE DATABASE bookmark_manager;
+* CREATE DATABASE bookmark_manager_test;
+
 * Connect to psql
 * Create the database using the psql command CREATE DATABASE bookmark_manager;
 * Connect to the database using the pqsl command \c bookmark_manager;
