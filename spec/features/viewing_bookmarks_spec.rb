@@ -1,7 +1,8 @@
 feature 'Viewing bookmarks' do
   scenario 'A user can view bookmarks' do
     visit '/bookmarks'
-    expect(page).to have_content "https://devhints.io/rspec"
-    expect(page).to have_content "https://devhints.io/capybara"
+    expect(page).to have_content "http://www.makersacademy.com/"
+    expect(page).to have_content "http://www.google.com/"
+    expect(page).to have_content "http://www.destroyallsoftware.com"
   end
 end
